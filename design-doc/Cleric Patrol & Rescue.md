@@ -3,7 +3,8 @@ Title to be confirmed.
 Casual
 # Background:
 You are a cleric on a pilgrimage through a dungeon to find the secret sauce.  During your pilgrimage, you may come across many adventurers who found themselves in a compromising positions against the various hazards of the dungeon.   Luckily, your temple has taught you how to perform CPR, and you have just enough magic to deliver a small shock to hopefully restart a heart from cardiac arrest.
-![[references/frieren-mimic.png]]
+
+![](references/frieren-mimic.png)
 # Overview
 
 ## stage 1
@@ -28,12 +29,12 @@ You are a cleric on a pilgrimage through a dungeon to find the secret sauce.  Du
 	- [ ] if victim is responsive, they will attack the player
 	- [ ] during chest compression, player will need to press a button on beat (120 bpm, up to 30 times if victim does not wake), with accompanying UI
 		- [ ] motion controls? - 5 cm deep -  probably not though
-		- ![[references/mad-rat-dead-beat-assist.png]]
+		- ![](references/mad-rat-dead-beat-assist.png)
 	- [ ] followed by 2 rescue breath
 		- [ ] pinch nose then blow into mouth - controls should reflect this in some way
 	- [ ] followed by a shock
 		- [ ] time the button press to line up with the right window
-		- ![[references/undertale-attack-bar.png]]
+		- ![](references/undertale-attack-bar.png)
 - Wait
 	- [ ] if victim is not breathing, they will die
 	- [ ] maybe a minigame for waiting?
