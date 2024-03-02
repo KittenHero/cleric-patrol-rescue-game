@@ -1,0 +1,5 @@
+# Godot 4+ specific ignores
+.godot/
+*/.obsidian/workspace.json
+*/.obsidian/plugins/**/*
+*/.obsidian/plugins/**/*
