@@ -2,14 +2,19 @@ Title to be confirmed.
 # Audience
 Casual
 # Background:
-You are a cleric on a pilgrimage through a dungeon to find the secret sauce.  You have no combat ability, but you know how to do CPR, and you have enough magic to act as a walking defibrillator every 2 minutes if you detect cardiac arrest.
-
+You are a cleric on a pilgrimage through a dungeon to find the secret sauce.  During your pilgrimage, you may come across many adventurers who found themselves in a compromising positions against the various hazards of the dungeon.   Luckily, your temple has taught you how to perform CPR, and you have just enough magic to deliver a small shock to hopefully restart a heart from cardiac arrest.
+![[frieren-mimic.png]]
 # Overview
+
 ## stage 1
 * [ ] Level select
 * [ ] each level immediately transitions to where the victim is stuck
 * [ ] the player mashes a button to fills up progress bar(s)
-	* [ ] which interpolates the animation to free the victim
+	* [ ] which interpolates the animation to free the victim from the hazards
+	* hazard ideas:
+		* mimic
+		* slime
+		* crevice (step bro)
 ## stage 2
 * [ ] victim now takes damage based on time stuck in hazard.
 * [ ] Once freed, player is presented with the following options:
