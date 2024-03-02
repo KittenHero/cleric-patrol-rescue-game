@@ -15,6 +15,7 @@ You are a cleric on a pilgrimage through a dungeon to find the secret sauce.  Du
 		* mimic
 		* slime
 		* crevice (step bro I'm stuck)
+		* in a small pond (don't know how to swim lol)
 ## stage 2
 * [ ] victim now takes damage based on time stuck in hazard.
 * [ ] Once freed, player is presented with the following options:
