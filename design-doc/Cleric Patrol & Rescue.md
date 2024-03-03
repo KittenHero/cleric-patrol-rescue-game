@@ -7,6 +7,7 @@ You are a cleric on a pilgrimage through a dungeon to find the secret sauce.  Du
 ![](references/frieren-mimic.png)
 # Overview
 
+[[Minigame ideas]]
 ## stage 1
 * [ ] Level select
 * [ ] each level immediately transitions to where the victim is stuck
@@ -39,6 +40,7 @@ You are a cleric on a pilgrimage through a dungeon to find the secret sauce.  Du
 	- [ ] if victim is not breathing, they will die
 	- [ ] maybe a minigame for waiting?
 ## stage 3
+
 * [ ] After freeing a damaged victim, player must drag their rag-doll body to away from the hazard and position their body face up.
 * [ ] Before resuscitation, player must remove armor from the victim
 * [ ] Keep level select to be able to skip a section, but make the game continuous, possibly add rhythm based minigame for traversing dungeon
