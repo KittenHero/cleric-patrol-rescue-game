@@ -35,3 +35,12 @@
 - Change intervals and speed for difficulty
 
 ![[references/electrified-awakening.png]]
+
+## Rhythmic path building to victim
+
+- build short or long path towards victim
+- top down view, below is just concept
+- Input chain of commands to build path well
+- They form up based on successful commands or u have to start over
+
+![[references/path-building.png]]
