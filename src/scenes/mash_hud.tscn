@@ -1,0 +1,126 @@
+[gd_scene load_steps=8 format=3 uid="uid://bgc18gi552b4i"]
+
+[ext_resource type="Texture2D" uid="uid://5sksa8d6kwcq" path="res://assets/button_prompts/ps5_cross_color.svg" id="1_cjd14"]
+[ext_resource type="Script" path="res://scripts/mash_hud_controller.gd" id="1_gyhp8"]
+[ext_resource type="Texture2D" uid="uid://c8qbxf6kr8qd4" path="res://assets/button_prompts/arrow.svg" id="2_cwnbv"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_c1x7x"]
+bg_color = Color(0, 0, 0, 0.360784)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ijeta"]
+bg_color = Color(0, 0.584314, 0, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.8, 0.8, 0.8, 0)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="Animation" id="Animation_la81o"]
+resource_name = "mash"
+length = 0.2
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("HBoxContainer/button/Control/press:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(0, -35), Vector2(0, -20), Vector2(0, -35)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_7r4bl"]
+_data = {
+"mash": SubResource("Animation_la81o")
+}
+
+[node name="mash_hud" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_gyhp8")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+
+[node name="button" type="TextureRect" parent="HBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture = ExtResource("1_cjd14")
+stretch_mode = 3
+
+[node name="Control" type="Control" parent="HBoxContainer/button"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="press" type="TextureRect" parent="HBoxContainer/button/Control"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -52.6137
+offset_right = 20.0
+offset_bottom = -12.6137
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_cwnbv")
+stretch_mode = 3
+
+[node name="ProgressBar" type="ProgressBar" parent="HBoxContainer"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(20, 0)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 1
+theme_override_styles/background = SubResource("StyleBoxFlat_c1x7x")
+theme_override_styles/fill = SubResource("StyleBoxFlat_ijeta")
+max_value = 15.0
+value = 5.0
+allow_greater = true
+fill_mode = 3
+show_percentage = false
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_7r4bl")
+}

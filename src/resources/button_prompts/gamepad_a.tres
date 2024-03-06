@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="ButtonTextureMapping" load_steps=4 format=3 uid="uid://cdxuuf6hrrq5p"]
+
+[ext_resource type="Script" path="res://resources/button_prompt_mapping.gd" id="1_em4hv"]
+[ext_resource type="Texture2D" uid="uid://5sksa8d6kwcq" path="res://assets/button_prompts/ps5_cross_color.svg" id="2_s1slh"]
+
+[sub_resource type="InputEventJoypadButton" id="InputEventJoypadButton_e7r4u"]
+
+[resource]
+script = ExtResource("1_em4hv")
+button = SubResource("InputEventJoypadButton_e7r4u")
+texture = ExtResource("2_s1slh")
